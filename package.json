@@ -4,6 +4,7 @@
   "description": "Instabuy round 2 with M E R N",
   "main": "index.js",
   "scripts": {
+    "build": "babel --presets env app.js -o app.babeled.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "homepage": "https://bitbucket.org/huynhtastic/instabuy-remix#readme",
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }
