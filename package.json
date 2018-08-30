@@ -1,0 +1,19 @@
+{
+  "name": "instabuy-remix",
+  "version": "1.0.0",
+  "description": "Instabuy round 2 with M E R N",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/huynhtastic/instabuy-remix.git"
+  },
+  "author": "squapad",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/huynhtastic/instabuy-remix#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
