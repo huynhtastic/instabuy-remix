@@ -4,7 +4,7 @@
   "description": "Instabuy round 2 with M E R N",
   "main": "index.js",
   "scripts": {
-    "build": "babel --presets env app.js -o app.babeled.js",
+    "build": "babel --presets env src -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
