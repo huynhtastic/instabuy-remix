@@ -1,24 +1,22 @@
 {
-  "name": "instabuy-remix",
+  "name": "api_test",
   "version": "1.0.0",
-  "description": "Instabuy round 2 with M E R N",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel --presets env src -d build",
+    "start": "node src/index.js",
+    "start-watch": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/huynhtastic/instabuy-remix.git"
-  },
-  "author": "squapad",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/huynhtastic/instabuy-remix#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "nodemon": "^1.18.4"
   }
 }
