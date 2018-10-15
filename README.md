@@ -30,7 +30,11 @@ To run the app, you'll need to build the source code (everything in src) and the
 
 We require ES6 for JSX syntax for React and new features that ES6 has that addresses some shortcomings of ES5.
 
+## New Update (15th OCT, 2018)
+
+I updated the repository to fit the API and MongoDB settings, know that the mongodb will not work with my credentials (obviously) and you need to setup your own. How you setup mongodb and mongoose I leave to you (feel free to ask for questions though!)
+
+
 To build and run:
 
-- `npm run build`
-- `node build/app.js`
+- `npm run start-watch`
