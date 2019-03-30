@@ -18,7 +18,8 @@
   "homepage": "https://bitbucket.org/huynhtastic/instabuy-remix#readme",
   "dependencies": {
     "@babel/runtime": "^7.4.2",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
