@@ -1,5 +1,6 @@
 import express from 'express';
 import mysql from 'mysql';
+import ImagesRouter from './routes/images.js';
 
 const envVars = [
     'NODEJS_MYSQL_USER',
@@ -15,7 +16,7 @@ for (let envVar of envVars) {
 }
 
 console.log('Connecting to local mysql instance...');
-const db = mysql.createConnection({
+export const db = mysql.createConnection({
   host     : 'localhost',
   user     : process.env.NODEJS_MYSQL_USER,
   password : process.env.NODEJS_MYSQL_PW,
@@ -37,11 +38,17 @@ db.connect((err) => {
       process.kill(process.pid, 'SIGUSR2');
     });
   });
+  console.log('Shutdown operations configured.');
 });
 
-// Start the application server
-console.log('Starting application server...');
-const app = express();
-app.get('/', (req, res) => res.send('Hello, Instabuy-Remix!'));
+function startServer() {
+  // Start the application server
+  console.log('Starting application server...');
+  const app = express();
+  app.get('/', (req, res) => res.send('Hello, Instabuy-Remix!'));
+  app.use('/images', ImagesRouter);
 
-app.listen(3000, () => console.log('Server listening on port 3000'));
+  app.listen(3000, '0.0.0.0', () => console.log('Server listening on port 3000'));
+}
+
+startServer();
